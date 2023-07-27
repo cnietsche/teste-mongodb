@@ -1,0 +1,111 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço 2",
+    "description": "Alguma descrição 2",
+    "price": 1700,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ghOlOf2N0liUcWJaX7XSvXXxgp5Hamo6FA&usqp=CAU"
+}
+
+###
+
+GET http://localhost:3000/api/services
+
+###
+
+GET http://localhost:3000/api/services/64bf2bae6372cddc2e510a3c
+
+###
+
+DELETE http://localhost:3000/api/services/64bf2bae6372cddc2e510a3c
+
+###
+
+PUT http://localhost:3000/api/services/64bf292b058b3d9410955dbc
+Content-Type: application/json
+
+{
+    "name": "Algum serviço A",
+    "description": "Alguma descrição A",
+    "price": 1450,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ghOlOf2N0liUcWJaX7XSvXXxgp5Hamo6FA&usqp=CAU"
+}
+
+###
+
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "Matheus",
+    "description": "Uma festa de aniversário",
+    "budget": 3000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ghOlOf2N0liUcWJaX7XSvXXxgp5Hamo6FA&usqp=CAU",
+    "services": [
+        {
+            "name": "Algum serviço A",
+            "description": "Alguma descrição A",
+            "price": 1000,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ghOlOf2N0liUcWJaX7XSvXXxgp5Hamo6FA&usqp=CAU"
+        },
+        {
+            "name": "Algum serviço B",
+            "description": "Alguma descrição B",
+            "price": 1000,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ghOlOf2N0liUcWJaX7XSvXXxgp5Hamo6FA&usqp=CAU"
+        },
+        {
+            "name": "Algum serviço C",
+            "description": "Alguma descrição C",
+            "price": 1000,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ghOlOf2N0liUcWJaX7XSvXXxgp5Hamo6FA&usqp=CAU"
+        }
+    ]
+}
+
+###
+
+GET http://localhost:3000/api/parties
+
+###
+
+GET http://localhost:3000/api/parties/64c073066fa96fc48e9da2e8
+
+###
+
+DELETE http://localhost:3000/api/parties/64c06f1128f1aeea53986c4f
+
+###
+
+PUT http://localhost:3000/api/parties/64c073066fa96fc48e9da2e8
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "João",
+    "description": "Uma festa de aniversário",
+    "budget": 3000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ghOlOf2N0liUcWJaX7XSvXXxgp5Hamo6FA&usqp=CAU",
+    "services": [
+        {
+            "name": "Algum serviço A",
+            "description": "Alguma descrição A",
+            "price": 1000,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ghOlOf2N0liUcWJaX7XSvXXxgp5Hamo6FA&usqp=CAU"
+        },
+        {
+            "name": "Algum serviço B",
+            "description": "Alguma descrição B",
+            "price": 1000,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ghOlOf2N0liUcWJaX7XSvXXxgp5Hamo6FA&usqp=CAU"
+        },
+        {
+            "name": "Algum serviço C",
+            "description": "Alguma descrição C",
+            "price": 1000,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ghOlOf2N0liUcWJaX7XSvXXxgp5Hamo6FA&usqp=CAU"
+        }
+    ]
+}
